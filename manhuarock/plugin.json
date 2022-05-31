@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "Manhuarock",
+    "author": "doremon04",
+    "version": 1,
+    "source": "https://manhuarock.net/",
+    "regexp": "manhuarock.net/[^/]+/?$",
+    "description": "Đọc truyện trên trang Manhuarock",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

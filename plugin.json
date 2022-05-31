@@ -5,15 +5,15 @@
   },
   "data": [
     {
-      "name": "",
+      "name": "Manhuarock",
       "author": "doremon04",
-      "path": "",
+      "path": "https://raw.githubusercontent.com/doremon04/vbook-extensions/main/manhuarock/plugin.zip",
       "version": 1,
-      "source": "",
-      "icon": "",
-      "description": "",
-      "type": "",
-      "locale": ""
+      "source": "https://manhuarock.net/",
+      "icon": "https://raw.githubusercontent.com/doremon04/vbook-extensions/main/manhuarock/icon.png",
+      "description": "Đọc truyện trên trang Manhuarock",
+      "type": "comic",
+      "locale": "vi-VN"
     }
   ]
 }
