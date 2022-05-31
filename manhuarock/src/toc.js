@@ -7,7 +7,7 @@ function execute(url) {
     var e = el.get(i);
     data.push({
       name: e.text(),
-      url: e.attr("href"),
+      url: `https://manhuarock.net/ajax/image/list/chap/${e.attr("data-chapter-id")}?mode=vertical&quality=high`,
       host: "https://manhuarock.net/",
     });
   }
