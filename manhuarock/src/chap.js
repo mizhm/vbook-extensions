@@ -1,5 +1,6 @@
 function execute(url) {
-  var doc = fetch(url).json().html;
+    var text = fetch(url).json().html;
+    doc = Html.parse(text);
     var el = doc.select(".image-placeholder img");
     var data = [];
 

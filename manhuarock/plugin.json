@@ -4,7 +4,7 @@
     "author": "doremon04",
     "version": 2,
     "source": "https://manhuarock.net/",
-    "regexp": "manhuarock.net/[^/]+/?$",
+    "regexp": "manhuarock.net/[a-zA-Z0-9-/]+/?$",
     "description": "Đọc truyện trên trang Manhuarock",
     "local": "vi-VN",
     "language": "javascript",
