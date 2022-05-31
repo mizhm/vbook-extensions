@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Manhuarock",
     "author": "doremon04",
-    "version": 2,
+    "version": 3,
     "source": "https://manhuarock.net/",
     "regexp": "manhuarock.net/[a-zA-Z0-9-/]+/?$",
     "description": "Đọc truyện trên trang Manhuarock",
