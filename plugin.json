@@ -14,6 +14,17 @@
       "description": "Đọc truyện trên trang Manhuarock",
       "type": "comic",
       "locale": "vi-VN"
+    },
+    {
+      "name": "Bảo tàng truyện",
+      "author": "doremon04",
+      "path": "https://raw.githubusercontent.com/doremon04/vbook-extensions/main/baotangtruyen/plugin.zip",
+      "version": 1,
+      "source": "https://baotangtruyenmoi.com",
+      "icon": "https://raw.githubusercontent.com/doremon04/vbook-extensions/main/baotangtruyen/icon.png",
+      "description": "Đọc Truyện Tranh Online - Kho Truyện Tranh Lớn Nhất VN - BaoTangTruyenTranh",
+      "type": "comic",
+      "locale": "vi-VN"
     }
   ]
 }

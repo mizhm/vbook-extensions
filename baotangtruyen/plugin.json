@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "Bảo tàng truyện",
+    "author": "doremon04",
+    "version": 1,
+    "source": "https://baotangtruyenmoi.com",
+    "regexp": "(www.)?baotangtruyenmoi.com/truyen-tranh/[^/]+/?$",
+    "description": "Đọc Truyện Tranh Online - Kho Truyện Tranh Lớn Nhất VN - BaoTangTruyenTranh",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
