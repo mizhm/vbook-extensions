@@ -2,9 +2,9 @@
   "metadata": {
     "name": "Bảo tàng truyện",
     "author": "doremon04",
-    "version": 1,
-    "source": "https://baotangtruyenmoi.com",
-    "regexp": "(www.)?baotangtruyenmoi.com/truyen-tranh/[^/]+/?$",
+    "version": 1.1,
+    "source": "https://baotangtruyenhot.com",
+    "regexp": "(www.)?baotangtruyenhot.com/truyen-tranh/[^/]+/?$",
     "description": "Đọc Truyện Tranh Online - Kho Truyện Tranh Lớn Nhất VN - BaoTangTruyenTranh",
     "local": "vi-VN",
     "language": "javascript",
