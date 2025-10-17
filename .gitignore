@@ -4,7 +4,14 @@
 *test.json
 data.json
 history.bak
-bachngocsach/
-metruyenchu/
-nettruyen/
-truyenqq/
+
+# Devenv
+.devenv*
+devenv.local.nix
+devenv.local.yaml
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
