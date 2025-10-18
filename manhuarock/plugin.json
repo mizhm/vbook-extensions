@@ -1,7 +1,7 @@
 {
   "metadata": {
     "name": "Manhuarock",
-    "author": "doremon04",
+    "author": "mizhm",
     "version": 3,
     "source": "https://manhuarock.net/",
     "regexp": "manhuarock.net/[a-zA-Z0-9-/]+/?$",

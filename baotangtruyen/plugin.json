@@ -1,7 +1,7 @@
 {
   "metadata": {
     "name": "Bảo tàng truyện",
-    "author": "doremon04",
+    "author": "mizhm",
     "version": 2,
     "source": "https://baotangtruyen36.top",
     "regexp": "(www.)?baotangtruyenhot.com/truyen-tranh/[^/]+/?$",

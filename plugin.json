@@ -1,29 +1,40 @@
 {
   "metadata": {
-    "author": "doremon04",
-    "description": "Vbook extension made by doremon04"
+    "author": "mizhm",
+    "description": "Vbook extension made by mizhm"
   },
   "data": [
     {
       "name": "Manhuarock",
-      "author": "doremon04",
-      "path": "https://raw.githubusercontent.com/doremon04/vbook-extensions/main/manhuarock/plugin.zip",
+      "author": "mizhm",
+      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/manhuarock/plugin.zip",
       "version": 3,
       "source": "https://manhuarock.net/",
-      "icon": "https://raw.githubusercontent.com/doremon04/vbook-extensions/main/manhuarock/icon.png",
+      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/manhuarock/icon.png",
       "description": "Đọc truyện trên trang Manhuarock",
       "type": "comic",
       "locale": "vi-VN"
     },
     {
       "name": "Bảo tàng truyện",
-      "author": "doremon04",
-      "path": "https://raw.githubusercontent.com/doremon04/vbook-extensions/main/baotangtruyen/plugin.zip",
+      "author": "mizhm",
+      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/baotangtruyen/plugin.zip",
       "version": 1,
       "source": "https://baotangtruyenmoi.com",
-      "icon": "https://raw.githubusercontent.com/doremon04/vbook-extensions/main/baotangtruyen/icon.png",
+      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/baotangtruyen/icon.png",
       "description": "Đọc Truyện Tranh Online - Kho Truyện Tranh Lớn Nhất VN - BaoTangTruyenTranh",
       "type": "comic",
+      "locale": "vi-VN"
+    },
+    {
+      "name": "Vozer",
+      "author": "mizhm",
+      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/vozer/plugin.zip",
+      "version": 0,
+      "source": "https://vozer.io",
+      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/vozer/icon.png",
+      "description": "Truyện voz",
+      "type": "novel",
       "locale": "vi-VN"
     }
   ]
