@@ -2,6 +2,11 @@
   # https://devenv.sh/packages/
   packages = [pkgs.git];
 
-  # https://devenv.sh/languages/
-  languages.java.enable = true;
+  languages.java = {
+    enable = true;
+    jdk.package = pkgs.jdk21.override {
+      enableJavaFX = true;
+      openjfx_jdk = pkgs.openjfx.override {withWebKit = true;};
+    };
+  };
 }

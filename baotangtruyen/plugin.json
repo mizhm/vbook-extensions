@@ -3,7 +3,7 @@
     "name": "Bảo tàng truyện",
     "author": "doremon04",
     "version": 2,
-    "source": "https://baotangtruyenhot.com",
+    "source": "https://baotangtruyen36.top",
     "regexp": "(www.)?baotangtruyenhot.com/truyen-tranh/[^/]+/?$",
     "description": "Đọc Truyện Tranh Online - Kho Truyện Tranh Lớn Nhất VN - BaoTangTruyenTranh",
     "local": "vi-VN",
