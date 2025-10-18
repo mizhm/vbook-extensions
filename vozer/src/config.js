@@ -1,6 +1,6 @@
-let BASE_URL = "https://metruyencv.biz";
+let BASE_URL = "https://vozer.io";
 try {
   if (CONFIG_URL) {
     BASE_URL = CONFIG_URL;
   }
-} catch (error) {}
+} catch (error) { }
