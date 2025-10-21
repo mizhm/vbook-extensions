@@ -8,10 +8,13 @@ function execute(url) {
 	}).html();
 	return Response.success({
 		name: doc.select("h1").text(),
-		cover: doc.select(".p-3 img").first().attr("src"),
-		description: doc.select(".p-3 .inline-block  p").html(),
-		detail: doc.select(".p-3 .border .p-2 p a").text(),
-		category: doc.select(".p-3 .border .p-2.leading-7 p a").html(),
+		cover: doc.select("#chapter_001 img").first().attr("src"),
+		description: doc.select(".smiley p").html(),
+		author: doc.select("p strong").get(2).text(),
+		detail: doc
+			.select("div[class='p-2 leading-7 text-justify lg:flex-1']")
+			.html(),
+		ongoing: doc.select("p strong").get(3).text().trim() !== "Hoàn Thành",
 		host: BASE_URL,
 	});
 }
