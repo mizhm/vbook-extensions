@@ -1,6 +1,12 @@
 function execute(url, page) {
   if (!page) page = "1";
-  const doc = Http.get(url).params({ page: page }).html();
+  const doc = fetch(url, {
+      method: "GET",
+      queries: {
+          page: page
+      }
+  }).html();
+  Console.log(doc)
 
   var next = doc.select(".pagination").select("li.active + li").text();
 
