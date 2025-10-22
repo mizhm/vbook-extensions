@@ -1,11 +1,12 @@
 load("config.js");
+load("util.js");
 
 function execute(key, page) {
 	if (!page) page = 1;
 	const data = fetch(`${BASE_URL}/api/novels/search`, {
 		queries: {
 			limit: 100,
-			q: key,
+			q: slugify(key),
 		},
 	}).json();
 
