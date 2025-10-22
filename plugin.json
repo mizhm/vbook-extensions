@@ -1,41 +1,52 @@
 {
-	"metadata": {
-		"author": "mizhm",
-		"description": "Vbook extension made by mizhm"
-	},
-	"data": [
-		{
-			"name": "Manhuarock",
-			"author": "mizhm",
-			"path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/manhuarock/plugin.zip",
-			"version": 3,
-			"source": "https://manhuarock.net/",
-			"icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/manhuarock/icon.png",
-			"description": "Đọc truyện trên trang Manhuarock",
-			"type": "comic",
-			"locale": "vi-VN"
-		},
-		{
-			"name": "Bảo tàng truyện",
-			"author": "mizhm",
-			"path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/baotangtruyen/plugin.zip",
-			"version": 1,
-			"source": "https://baotangtruyenmoi.com",
-			"icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/baotangtruyen/icon.png",
-			"description": "Đọc Truyện Tranh Online - Kho Truyện Tranh Lớn Nhất VN - BaoTangTruyenTranh",
-			"type": "comic",
-			"locale": "vi-VN"
-		},
-		{
-			"name": "Vozer",
-			"author": "mizhm",
-			"path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/vozer/plugin.zip",
-			"version": 1,
-			"source": "https://vozer.io",
-			"icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/vozer/icon.png",
-			"description": "Vozer là web đọc truyện online miễn phí với với tổng hợp đầy đủ chuyện trên trời dưới đất, nhưng nổi bật nhất vẫn là là Truyện Voz. Nơi đây sản sinh ra những tác giả có những cuốn tự truyện có thể nói là huyền thoại một thời. Vozer có nhiều truyện mới nhất từ các tác giả với tất cả thể loại như Tâm linh, Tình yêu, Truyện ma,...",
-			"type": "novel",
-			"locale": "vi-VN"
-		}
-	]
+  "metadata": {
+    "author": "mizhm",
+    "description": "Vbook extension made by mizhm"
+  },
+  "data": [
+    {
+      "name": "Manhuarock",
+      "author": "mizhm",
+      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/manhuarock/plugin.zip",
+      "version": 3,
+      "source": "https://manhuarock.net/",
+      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/manhuarock/icon.png",
+      "description": "Đọc truyện trên trang Manhuarock",
+      "type": "comic",
+      "locale": "vi-VN"
+    },
+    {
+      "name": "Bảo tàng truyện",
+      "author": "mizhm",
+      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/baotangtruyen/plugin.zip",
+      "version": 1,
+      "source": "https://baotangtruyenmoi.com",
+      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/baotangtruyen/icon.png",
+      "description": "Đọc Truyện Tranh Online - Kho Truyện Tranh Lớn Nhất VN - BaoTangTruyenTranh",
+      "type": "comic",
+      "locale": "vi-VN"
+    },
+    {
+      "name": "Vozer",
+      "author": "mizhm",
+      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/vozer/plugin.zip",
+      "version": 1,
+      "source": "https://vozer.io",
+      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/vozer/icon.png",
+      "description": "Vozer là web đọc truyện online miễn phí với với tổng hợp đầy đủ chuyện trên trời dưới đất, nhưng nổi bật nhất vẫn là là Truyện Voz. Nơi đây sản sinh ra những tác giả có những cuốn tự truyện có thể nói là huyền thoại một thời. Vozer có nhiều truyện mới nhất từ các tác giả với tất cả thể loại như Tâm linh, Tình yêu, Truyện ma,...",
+      "type": "novel",
+      "locale": "vi-VN"
+    },
+    {
+      "name": "Truyện dịch miễn phí",
+      "author": "mizhm",
+      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/truyendichmienphi/plugin.zip",
+      "version": 1,
+      "source": "https://truyendichmienphi.com",
+      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/truyendichmienphi/icon.png",
+      "description": "TruyenDichMienPhi.com là nền tảng đọc truyện chữ online miễn phí. Truyện dịch rõ nghĩa, mượt mà, không quảng cáo, không cần đăng nhập. Cập nhật nhanh các thể loại hot: tiên hiệp, huyền ảo, đô thị, kiếm hiệp, xuyên không...",
+      "type": "novel",
+      "locale": "vi-VN"
+    }
+  ]
 }
