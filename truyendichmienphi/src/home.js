@@ -9,7 +9,7 @@ function execute() {
 		},
 		{
 			title: "Top lượt đọc",
-			input: `${BASE_URL}/api/novels/top-reads?limit=100`,
+			input: `${BASE_URL}/api/novels/top-read?limit=100`,
 			script: "home-content.js",
 		},
 		{

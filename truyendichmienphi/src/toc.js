@@ -10,7 +10,7 @@ function execute(url) {
 	const tocs = [];
 	data.results.forEach((toc) => {
 		tocs.push({
-			name: toc.title,
+			name: `${toc.chapter_number}: ${toc.title}`,
 			url: `${detailURL}chapter/${toc.chapter_number}`,
 			host: BASE_URL,
 		});

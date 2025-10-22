@@ -5,7 +5,7 @@ function execute(url) {
 
 	if (!data) return null;
 
-	const detail = `Views: ${data.view_count}\nChapters: ${data.total_chapters}\nTypes: ${data.types.map((type) => type.name).join(", ")}`;
+	const detail = `<p>Views: ${data.view_count}</p><p>Chapters: ${data.total_chapters}\n\n</p><p>Types: ${data.types.map((type) => type.name).join(", ")}</p>`;
 
 	return Response.success({
 		name: data.title,
