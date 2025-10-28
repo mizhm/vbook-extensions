@@ -2,7 +2,7 @@
 	"metadata": {
 		"name": "Truyện dịch miễn phí",
 		"author": "mizhm",
-		"version": 3,
+		"version": 4,
 		"source": "https://truyendichmienphi.com",
 		"regexp": "https://api.truyendichmienphi.com/(.*?)$",
 		"description": "TruyenDichMienPhi.com là nền tảng đọc truyện chữ online miễn phí. Truyện dịch rõ nghĩa, mượt mà, không quảng cáo, không cần đăng nhập. Cập nhật nhanh các thể loại hot: tiên hiệp, huyền ảo, đô thị, kiếm hiệp, xuyên không...",

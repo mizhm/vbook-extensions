@@ -20,6 +20,7 @@ function execute(url, page) {
 	if (match && match.length > 1) {
 		const pageNumberString = match[1];
 		const pageNumber = parseInt(pageNumberString, 10);
+		console.log(pageNumber);
 		if (page + 1 <= pageNumber) {
 			next = page + 1;
 		}

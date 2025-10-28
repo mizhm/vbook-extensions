@@ -2,7 +2,6 @@ load("config.js");
 load("util.js");
 
 function execute(key, page) {
-	if (!page) page = 1;
 	const data = fetch(`${BASE_URL}/api/novels/search`, {
 		queries: {
 			limit: 100,
@@ -23,5 +22,5 @@ function execute(key, page) {
 		});
 	});
 
-	return Response.success(list, page);
+	return Response.success(list, null);
 }

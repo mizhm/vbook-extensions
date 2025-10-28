@@ -4,7 +4,7 @@ load("util.js");
 function execute(key, page) {
 	if (!page) page = 1;
 	const doc = fetch(
-		`${BASE_URL}?tim-kiem?sort=-views&keyword=${key}&filter[status]=2,1&page=${page}`,
+		`${BASE_URL}/tim-kiem?sort=-views&keyword=${key}&page=${page}&filter[status]=2,1`,
 	).html();
 	let next = null;
 

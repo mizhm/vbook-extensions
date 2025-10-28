@@ -2,7 +2,7 @@
 	"metadata": {
 		"name": "ViHentai",
 		"author": "mizhm",
-		"version": 1,
+		"version": 2,
 		"source": "https://vi-hentai.org",
 		"regexp": "https://vi-hentai.org/truyen/(.*?)$",
 		"description": "Trang đọc truyện 210 tiếng Việt miễn phí",
