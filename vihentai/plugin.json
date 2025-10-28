@@ -1,0 +1,22 @@
+{
+	"metadata": {
+		"name": "ViHentai",
+		"author": "mizhm",
+		"version": 1,
+		"source": "https://vi-hentai.org",
+		"regexp": "https://vi-hentai.org/truyen/(.*?)$",
+		"description": "Trang đọc truyện 210 tiếng Việt miễn phí",
+		"locale": "vi-VN",
+		"tag": "nsfw",
+		"language": "javascript",
+		"type": "comic"
+	},
+	"script": {
+		"home": "home.js",
+		"genre": "genre.js",
+		"detail": "detail.js",
+		"search": "search.js",
+		"toc": "toc.js",
+		"chap": "chap.js"
+	}
+}

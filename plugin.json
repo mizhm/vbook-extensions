@@ -47,6 +47,18 @@
 			"description": "TruyenDichMienPhi.com là nền tảng đọc truyện chữ online miễn phí. Truyện dịch rõ nghĩa, mượt mà, không quảng cáo, không cần đăng nhập. Cập nhật nhanh các thể loại hot: tiên hiệp, huyền ảo, đô thị, kiếm hiệp, xuyên không...",
 			"type": "novel",
 			"locale": "vi-VN"
+		},
+		{
+			"name": "ViHentai",
+			"author": "mizhm",
+			"path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/truyendichmienphi/plugin.zip",
+			"version": 1,
+			"source": "https://vi-hentai.org",
+			"icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/truyendichmienphi/icon.png",
+			"description": "Trang đọc truyện 210 tiếng Việt miễn phí",
+			"tag": "nsfw",
+			"type": "comic",
+			"locale": "vi-VN"
 		}
 	]
 }
