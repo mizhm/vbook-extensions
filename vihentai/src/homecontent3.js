@@ -21,7 +21,9 @@ function execute(url, page) {
 					.last()
 					.attr(`href`),
 			host: BASE_URL,
-			cover: getBgImgURL(e.select(".cover-sm").first().attr("style")),
+			cover: getBgImgURL(
+				e.select("div[style^='background-image']").first().attr("style"),
+			),
 			description: e.select("span[class='text-sm break-all']").first().text(),
 		};
 	});
