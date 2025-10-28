@@ -10,3 +10,9 @@ function getBgImgURL(cssValue) {
 
 	return null;
 }
+
+function sleepRandom(minMillis, maxMillis) {
+	const delay =
+		Math.floor(Math.random() * (maxMillis - minMillis + 1)) + minMillis;
+	sleep(delay);
+}
