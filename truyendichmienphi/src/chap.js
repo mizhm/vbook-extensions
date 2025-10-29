@@ -10,6 +10,6 @@ function execute(url) {
 	).toString(CryptoJS.enc.Utf8);
 	const lines = decodedText.split("\n");
 	lines.reverse();
-	const content = lines.join("\n");
+	const content = lines.join("<br>");
 	return Response.success(content);
 }

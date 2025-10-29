@@ -7,13 +7,12 @@ function execute(url) {
 
 	const detailURL = url.split("?")[0].replace("/chapters", "");
 
-	const tocs = [];
-	data.results.forEach((toc) => {
-		tocs.push({
+	const tocs = data.results.map((toc) => {
+		return {
 			name: `${toc.chapter_number}: ${toc.title}`,
 			url: `${detailURL}chapter/${toc.chapter_number}`,
 			host: BASE_URL,
-		});
+		};
 	});
 
 	return Response.success(tocs);
