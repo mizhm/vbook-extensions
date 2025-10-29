@@ -22,3 +22,19 @@ function slugify(string) {
 		.replace(/^-+/, "")
 		.replace(/-+$/, "");
 }
+
+function getAPIURL(baseURL) {
+	const regex =
+		/^(https?:\/\/)?(www\.)?truyendichmienphi\.com\/truyen\/([^/?#]+)(.*)?$/;
+
+	if (!regex.test(baseURL)) {
+		return null;
+	}
+
+	const apiUrl = baseURL.replace(
+		regex,
+		"https://api.truyendichmienphi.com/api/novels/$3",
+	);
+
+	return apiUrl;
+}

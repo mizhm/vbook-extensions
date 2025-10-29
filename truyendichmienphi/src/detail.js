@@ -1,7 +1,9 @@
 load("config.js");
+load("util.js");
 
 function execute(url) {
-	const data = fetch(url).json();
+	const apiURL = getAPIURL(url);
+	const data = fetch(apiURL).json();
 
 	if (!data) return null;
 

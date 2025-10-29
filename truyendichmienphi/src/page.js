@@ -1,7 +1,9 @@
 load("config.js");
+load("util.js");
 
 function execute(url) {
-	const data = fetch(`${url}/chapters`, {
+	const apiURL = getAPIURL(url);
+	const data = fetch(`${apiURL}/chapters`, {
 		limit: 100,
 		page: 1,
 		sortBy: "chaper_number:asc",
@@ -13,7 +15,7 @@ function execute(url) {
 
 	for (let i = 1; i <= data.totalPages; i++) {
 		pages.push(
-			`${url}/chapters/?limit=100&page=${i}&sortBy=chapter_number:asc`,
+			`${apiURL}/chapters/?limit=100&page=${i}&sortBy=chapter_number:asc`,
 		);
 	}
 

@@ -9,7 +9,7 @@ function execute(url) {
 
 	const tocs = data.results.map((toc) => {
 		return {
-			name: `${toc.chapter_number}: ${toc.title}`,
+			name: `Chap ${toc.chapter_number}: ${toc.title}`,
 			url: `${detailURL}chapter/${toc.chapter_number}`,
 			host: BASE_URL,
 		};
