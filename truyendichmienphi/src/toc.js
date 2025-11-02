@@ -1,19 +1,21 @@
 load("config.js");
+load("util.js");
 
 function execute(url) {
-	const data = fetch(url).json();
+	const apiURL = getAPIURL(url);
+	const data = fetch(`${apiURL}/chapters`, {
+		limit: 99999,
+		page: 1,
+		sortBy: "chaper_number:asc",
+	}).json();
 
-	if (!data) return Response.error("Failed to fetch data");
-
-	const detailURL = url.split("?")[0].replace("/chapters", "");
-
-	const tocs = data.results.map((toc) => {
-		return {
-			name: `Chap ${toc.chapter_number}: ${toc.title}`,
-			url: `${detailURL}chapter/${toc.chapter_number}`,
-			host: BASE_URL,
-		};
-	});
-
-	return Response.success(tocs);
+	return Response.success(
+		data.results.map((toc) => {
+			return {
+				name: `Chap ${toc.chapter_number}: ${toc.title}`,
+				url: `${apiURL}/chapter/${toc.chapter_number}`,
+				host: BASE_URL,
+			};
+		}),
+	);
 }
