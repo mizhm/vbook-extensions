@@ -1,0 +1,21 @@
+{
+	"metadata": {
+		"name": "Cà Chua",
+		"author": "mizhm",
+		"version": 1,
+		"source": "https://fanqienovel.com",
+		"regexp": "http://113.45.229.86:8543/(.*?)$",
+		"description": "Cà Chua",
+		"locale": "zh_CN",
+		"tag": "",
+		"type": "chinese_novel"
+	},
+	"script": {
+		"home": "home.js",
+		"genre": "genre.js",
+		"detail": "detail.js",
+		"search": "search.js",
+		"toc": "toc.js",
+		"chap": "chap.js"
+	}
+}

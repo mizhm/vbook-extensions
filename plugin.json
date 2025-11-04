@@ -59,6 +59,19 @@
 			"type": "comic",
 			"tag": "nsfw",
 			"locale": "vi-VN"
+		},
+		{
+			"path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/cachua/plugin.zip",
+			"icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/cachua/icon.png",
+			"name": "Cà Chua",
+			"author": "mizhm",
+			"version": 1,
+			"source": "https://fanqienovel.com",
+			"regexp": "http://113.45.229.86:8543/(.*?)$",
+			"description": "Cà Chua",
+			"locale": "zh_CN",
+			"tag": "",
+			"type": "chinese_novel"
 		}
 	]
 }
