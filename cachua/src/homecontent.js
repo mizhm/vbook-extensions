@@ -11,7 +11,7 @@ function execute(url, page) {
 		data.book_list.map((book) => {
 			return {
 				name: book.book_name,
-				link: `${API_URL}/detail?book_id=${book.book_id}`,
+				link: `${BASE_URL}/page/${book.book_id}`,
 				cover: book.thumb_url,
 			};
 		}),
