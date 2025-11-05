@@ -72,6 +72,18 @@
 			"locale": "zh_CN",
 			"tag": "",
 			"type": "chinese_novel"
+		},
+		{
+			"path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/ihuaben/plugin.zip",
+			"icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/ihuaben/icon.png",
+			"name": "ihuaben",
+			"author": "mizhm",
+			"version": 1,
+			"source": "https://www.ihuaben.com",
+			"regexp": "https://www.ihuaben.com/(.*?)$",
+			"description": "ihuaben",
+			"locale": "zh_CN",
+			"type": "chinese_novel"
 		}
 	]
 }
