@@ -74,6 +74,18 @@
 			"type": "chinese_novel"
 		},
 		{
+			"path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/quykiep/plugin.zip",
+			"icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/quykiep/icon.png",
+			"name": "QuyKiep",
+			"author": "mizhm",
+			"version": 1,
+			"source": "https://quykiep.com",
+			"regexp": "https://quykiep.com/(.*?)$",
+			"description": "Mê Đọc Truyện Chữ Light Novel Online - Kho Tàng Light Novel Hay Nhất",
+			"locale": "vi_VN",
+			"type": "novel"
+		},
+		{
 			"path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/ihuaben/plugin.zip",
 			"icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/ihuaben/icon.png",
 			"name": "ihuaben",
