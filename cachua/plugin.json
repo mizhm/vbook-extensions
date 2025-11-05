@@ -4,7 +4,7 @@
 		"author": "mizhm",
 		"version": 2,
 		"source": "https://fanqienovel.com",
-		"regexp": "http://113.45.229.86:8543/(.*?)$",
+		"regexp": "https://fanqienovel.com/(.*?)$",
 		"description": "Cà Chua",
 		"locale": "zh_CN",
 		"tag": "",
