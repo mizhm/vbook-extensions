@@ -2,7 +2,7 @@
 	"metadata": {
 		"name": "ihuaben",
 		"author": "mizhm",
-		"version": 1,
+		"version": 2,
 		"source": "https://www.ihuaben.com",
 		"regexp": "https://www.ihuaben.com/(.*?)$",
 		"description": "ihuaben",

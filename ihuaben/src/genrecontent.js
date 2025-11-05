@@ -1,12 +1,9 @@
 load("config.js");
 
 function execute(url, page) {
-	if (!page) page = 1;
+	if (!page) page = "1";
 	const html = fetch(`${url}/clickcount_days_7/${page}.html`).html();
-	const next =
-		html.select(".pagination .active + a").text().length > 0
-			? parseInt(page) + 1
-			: null;
+	const next = html.select(".pagination").select(".active + a").text();
 	const list = html.select(".booklist li").map((e) => {
 		return {
 			name: e.select("h3 a").text(),

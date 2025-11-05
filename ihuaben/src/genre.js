@@ -9,7 +9,7 @@ function execute() {
 	girl.select(".sublist a").forEach((e) => {
 		list.push({
 			title: `女频 - ${e.text()}`,
-			input: `http:${e.attr("href")}`,
+			input: `https:${e.attr("href")}`,
 			script: "genrecontent.js",
 		});
 	});
@@ -17,7 +17,7 @@ function execute() {
 	boy.select(".sublist a").forEach((e) => {
 		list.push({
 			title: `男频 - ${e.text()}`,
-			input: `http:${e.attr("href")}`,
+			input: `https:${e.attr("href")}`,
 			script: "genrecontent.js",
 		});
 	});
@@ -25,7 +25,7 @@ function execute() {
 	tongren.select(".sublist a").forEach((e) => {
 		list.push({
 			title: `同人 - ${e.text()}`,
-			input: `http:${e.attr("href")}`,
+			input: `https:${e.attr("href")}`,
 			script: "genrecontent.js",
 		});
 	});
