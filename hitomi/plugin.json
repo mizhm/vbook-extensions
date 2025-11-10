@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "name": "Hitomi",
+    "author": "mizhm",
+    "version": 1,
+    "source": "https://hitomi.la/",
+    "regexp": "https?://hitomi.la/(gallery|reader)/.+",
+    "description": "Hitomi.la is the best source of free hentai doujinshi, manga, artist CG, and anime.",
+    "locale": "en_US",
+    "tag": "nsfw",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "page": "page.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
