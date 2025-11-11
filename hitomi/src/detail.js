@@ -24,8 +24,8 @@ function execute(url) {
     name: galleryinfo.title,
     cover: coverUrl,
     host: "https://hitomi.la",
-    author: galleryinfo.artists.map((a) => a.artist).join(", "),
-    detail: galleryinfo.tags
+    author: (galleryinfo.artists || []).map((a) => a.artist).join(", "),
+    detail: (galleryinfo.tags || [])
       .map(function (t) {
         if (t.female) {
           return `female: ${t.tag}`;

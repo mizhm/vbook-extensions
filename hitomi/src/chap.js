@@ -50,9 +50,5 @@ function execute(url) {
     imgs.push(imgUrl);
   });
 
-  return Response.success(imgs, {
-    headers: {
-      Referer: "https://hitomi.la/",
-    },
-  });
+  return Response.success(imgs);
 }
