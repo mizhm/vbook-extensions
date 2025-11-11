@@ -45,7 +45,7 @@ function execute(url) {
 
     const pathComponent = g.toString();
     const path = ggB + pathComponent + "/" + hash;
-    const imgUrl = `https://${subdomain}.gold-usergeneratedcontent.net/${path}.${extension}`;
+    const imgUrl = `https://w${subdomainNum}.gold-usergeneratedcontent.net/${path}.webp`;
 
     imgs.push({ link: imgUrl, referer: BASE_URL });
   });
