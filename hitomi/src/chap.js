@@ -36,7 +36,7 @@ function execute(url) {
     const m2 = hash.slice(-1);
     const g = parseInt(m2 + m1, 16);
 
-    const subNum = ggMSet.has(g) ? 1 : 0;
+    const subNum = ggMSet.has(g) ? 0 : 1;
     const subdomainNum = 1 + subNum;
 
     const prefix = hasavif ? "a" : "w";
@@ -47,7 +47,7 @@ function execute(url) {
     const path = ggB + pathComponent + "/" + hash;
     const imgUrl = `https://${subdomain}.gold-usergeneratedcontent.net/${path}.${extension}`;
 
-    imgs.push(imgUrl);
+    imgs.push({ link: imgUrl, referer: BASE_URL });
   });
 
   return Response.success(imgs);
