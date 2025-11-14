@@ -1,19 +1,19 @@
 load("config.js");
 function execute() {
-	let response = fetch(BASE_URL, {
-		headers: { "User-Agent": BASE_UA },
-	});
-	if (response.ok) {
-		let doc = response.html();
-		const data = [];
-		doc.select(".grid .flex").forEach((e) => {
-			data.push({
-				title: e.text(),
-				input: e.attr("href"),
-				script: "gen.js",
-			});
-		});
-		return Response.success(data);
-	}
-	return null;
+  let response = fetch(BASE_URL, {
+    headers: { "User-Agent": BASE_UA },
+  });
+  if (response.ok) {
+    let doc = response.html();
+    const data = [];
+    doc.select(".grid a[href*='the-loai']").forEach((e) => {
+      data.push({
+        title: e.text(),
+        input: e.attr("href"),
+        script: "gen.js",
+      });
+    });
+    return Response.success(data);
+  }
+  return null;
 }
