@@ -6,7 +6,7 @@ function execute() {
   if (response.ok) {
     let doc = response.html();
     const data = [];
-    doc.select(".grid a[href*='the-loai']").forEach((e) => {
+    doc.select(".grid a[href*='/the-loai/']").forEach((e) => {
       data.push({
         title: e.text(),
         input: e.attr("href"),
