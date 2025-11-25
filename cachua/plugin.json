@@ -1,21 +1,21 @@
 {
-	"metadata": {
-		"name": "Cà Chua",
-		"author": "mizhm",
-		"version": 2,
-		"source": "https://fanqienovel.com",
-		"regexp": "https://fanqienovel.com/(.*?)$",
-		"description": "Cà Chua",
-		"locale": "zh_CN",
-		"tag": "",
-		"type": "chinese_novel"
-	},
-	"script": {
-		"home": "home.js",
-		"genre": "genre.js",
-		"detail": "detail.js",
-		"search": "search.js",
-		"toc": "toc.js",
-		"chap": "chap.js"
-	}
+  "metadata": {
+    "name": "Cà Chua",
+    "author": "mizhm",
+    "version": 3,
+    "source": "https://fanqienovel.com",
+    "regexp": "https://fanqienovel.com/(.*?)$",
+    "description": "Cà Chua",
+    "locale": "zh_CN",
+    "tag": "",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
 }
