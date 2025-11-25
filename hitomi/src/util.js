@@ -32,3 +32,7 @@ function processGalleryInfo(galleryInfoText) {
 
   return galleryinfo;
 }
+
+function createBase64DataUrl(mimeType, base64Data) {
+  return `data:${mimeType};base64,${base64Data}`;
+}

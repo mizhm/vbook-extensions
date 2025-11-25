@@ -5,7 +5,7 @@ function execute(url) {
     },
   });
   if (response.ok) {
-    return response.base64();
+    return "data:png;base64," + response.base64();
   }
 
   return null;

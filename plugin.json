@@ -90,7 +90,7 @@
       "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/ihuaben/icon.png",
       "name": "ihuaben",
       "author": "mizhm",
-      "version": 2,
+      "version": 3,
       "source": "https://www.ihuaben.com",
       "regexp": "https://www.ihuaben.com/(.*?)$",
       "description": "ihuaben",
