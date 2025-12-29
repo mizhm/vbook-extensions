@@ -3,8 +3,10 @@ load("crypto.js");
 
 function execute(url) {
   const text = fetch(getUrl(url)).text();
-  const regex = /\\"ver\\":\\"([a-f0-9]{32})\\"/;
+  console.log(text);
+  const regex = /\\"ver\d*\\":\\"([a-f0-9]{32})\\"/;
   const match = text.match(regex);
+  console.log(match[1]);
 
   const PASSPHRASE = "z4x8vog2a13vz4x8vog2a13v124";
 
