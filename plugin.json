@@ -49,18 +49,6 @@
       "locale": "vi-VN"
     },
     {
-      "name": "ViHentai",
-      "author": "mizhm",
-      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/vihentai/plugin.zip",
-      "version": 1,
-      "source": "https://vi-hentai.org",
-      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/vihentai/icon.png",
-      "description": "Trang đọc truyện 210 tiếng Việt miễn phí",
-      "type": "comic",
-      "tag": "nsfw",
-      "locale": "vi-VN"
-    },
-    {
       "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/cachua/plugin.zip",
       "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/cachua/icon.png",
       "name": "Cà Chua",
@@ -96,19 +84,6 @@
       "description": "ihuaben",
       "locale": "zh_CN",
       "type": "chinese_novel"
-    },
-    {
-      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/hitomi/plugin.zip",
-      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/hitomi/icon.png",
-      "name": "Hitomi",
-      "author": "mizhm",
-      "version": 1,
-      "source": "https://hitomi.la/",
-      "regexp": "https?://hitomi.la/(gallery|reader)/.+",
-      "description": "Hitomi.la is the best source of free hentai doujinshi, manga, artist CG, and anime.",
-      "locale": "en_US",
-      "tag": "nsfw",
-      "type": "comic"
     }
   ]
 }

@@ -15,3 +15,7 @@ devenv.local.yaml
 
 # pre-commit
 .pre-commit-config.yaml
+
+#nsfw ignore
+vihentai/*
+hitomi/*
