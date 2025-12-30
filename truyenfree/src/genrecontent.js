@@ -3,18 +3,18 @@ load("config.js");
 function execute(url, page) {
   if (!page) page = 1;
 
-  const html = fetch(url, {
+  let html = fetch(url, {
     queries: { page: page.toString() },
   }).html();
 
-  const total = parseInt(
+  let total = parseInt(
     html.select("div.absolute span").first().text().replace("/", "").trim(),
     10
   );
 
-  const next = page < total ? page + 1 : null;
+  let next = page < total ? page + 1 : null;
 
-  const list = html
+  let list = html
     .select("div.grid div.flex.flex-row.items-start.gap-4")
     .map((e) => {
       return {
