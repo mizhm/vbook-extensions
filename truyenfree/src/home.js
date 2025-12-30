@@ -20,12 +20,12 @@ function execute() {
     {
       title: "TOP yêu thích",
       input: `${BASE_URL}/xep-hang/yeu-thich`,
-      script: "genrecontent.js",
+      script: "homecontent.js",
     },
     {
       title: "Đọc nhiều tuần",
       input: `${BASE_URL}/xep-hang/luot-doc`,
-      script: "genrecontent.js",
+      script: "homecontent.js",
     },
   ]);
 }

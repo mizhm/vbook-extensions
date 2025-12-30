@@ -7,6 +7,7 @@
     "regexp": "https://truyenfree.org/(.*?)$",
     "description": "TruyenFree: Thư viện Truyện và Sách chất lượng, đa dạng thể loại để phục vụ bạn đọc.",
     "locale": "vi_VN",
+    "language": "javascript",
     "type": "novel"
   },
   "script": {

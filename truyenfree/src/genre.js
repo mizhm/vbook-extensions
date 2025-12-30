@@ -24,6 +24,7 @@ function execute() {
     return {
       title: genre.name,
       input: `${BASE_URL}/danh-sach?cate=${genre.slugId}`,
+      script: "genrecontent.js",
     };
   });
 
