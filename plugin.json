@@ -62,6 +62,18 @@
       "description": "ihuaben",
       "locale": "zh_CN",
       "type": "chinese_novel"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/truyenfree/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/truyenfree/icon.png",
+      "name": "truyenfree",
+      "author": "mizhm",
+      "version": 1,
+      "source": "https://truyenfree.org",
+      "regexp": "https://truyenfree.org/(.*?)$",
+      "description": "TruyenFree: Thư viện Truyện và Sách chất lượng, đa dạng thể loại để phục vụ bạn đọc.",
+      "locale": "vi_VN",
+      "type": "novel"
     }
   ]
 }
