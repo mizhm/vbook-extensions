@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "Truyen Now",
+    "author": "mizhm",
+    "version": 1,
+    "source": "https://truyennow.vn/",
+    "regexp": "https://truyennow.vn/(.*?)$",
+    "description": "Truyen.Free - Đọc truyện chữ online miễn phí, truyện tiên hiệp, kiếm hiệp, ngôn tình, đô thị được dịch nhanh chóng.",
+    "locale": "vi_VN",
+    "type": "novel"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "page": "page.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
