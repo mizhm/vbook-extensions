@@ -1,8 +1,8 @@
 let BASE_URL = "https://fanqienovel.com";
-const API_URL = "http://113.45.229.86:8543";
+const API_URL = "https://qkfqapi.vv9v.cn/api";
 
 try {
-	if (CONFIG_URL) {
-		BASE_URL = CONFIG_URL;
-	}
+  if (CONFIG_URL) {
+    BASE_URL = CONFIG_URL;
+  }
 } catch {}

@@ -5,28 +5,6 @@
   },
   "data": [
     {
-      "name": "Manhuarock",
-      "author": "mizhm",
-      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/manhuarock/plugin.zip",
-      "version": 3,
-      "source": "https://manhuarock.net/",
-      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/manhuarock/icon.png",
-      "description": "Đọc truyện trên trang Manhuarock",
-      "type": "comic",
-      "locale": "vi-VN"
-    },
-    {
-      "name": "Bảo tàng truyện",
-      "author": "mizhm",
-      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/baotangtruyen/plugin.zip",
-      "version": 1,
-      "source": "https://baotangtruyenmoi.com",
-      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/baotangtruyen/icon.png",
-      "description": "Đọc Truyện Tranh Online - Kho Truyện Tranh Lớn Nhất VN - BaoTangTruyenTranh",
-      "type": "comic",
-      "locale": "vi-VN"
-    },
-    {
       "name": "Vozer",
       "author": "mizhm",
       "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/vozer/plugin.zip",
@@ -53,7 +31,7 @@
       "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/cachua/icon.png",
       "name": "Cà Chua",
       "author": "mizhm",
-      "version": 3,
+      "version": 4,
       "source": "https://fanqienovel.com",
       "regexp": "http://113.45.229.86:8543/(.*?)$",
       "description": "Cà Chua",
