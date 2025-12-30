@@ -2,19 +2,33 @@ load("config.js");
 load("crypto.js");
 
 function execute(url) {
-  const text = fetch(getUrl(url)).text();
-  console.log(text);
-  const regex = /\\"ver\d*\\":\\"([a-f0-9]{32})\\"/;
-  const match = text.match(regex);
-  console.log(match[1]);
+  var browser = Engine.newBrowser();
+  browser.setUserAgent(UserAgent.android());
+  browser.launch(getUrl(url), 30000);
 
+  browser.waitUrl(
+    ".*?api\\.truyendichmienphi\\.com.*?token=([a-f0-9]{32})",
+    20000
+  );
+
+  const requestUrls = JSON.parse(browser.urls());
+  browser.close();
+
+  let targetApiUrl = "";
+
+  requestUrls.forEach((reqUrl) => {
+    if (
+      reqUrl.indexOf("/api/novels/") >= 0 &&
+      reqUrl.indexOf("/chapter/") >= 0 &&
+      reqUrl.indexOf("token=") >= 0 &&
+      reqUrl.indexOf("null") === -1
+    ) {
+      targetApiUrl = reqUrl;
+    }
+  });
   const PASSPHRASE = "z4x8vog2a13vz4x8vog2a13v124";
 
-  const response = fetch(url, {
-    queries: {
-      token: match[1],
-    },
-  });
+  const response = fetch(targetApiUrl);
 
   const decodedText = CryptoJS.AES.decrypt(
     response.json().content,
