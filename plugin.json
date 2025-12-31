@@ -81,8 +81,8 @@
       "name": "Truyen Now",
       "author": "mizhm",
       "version": 1,
-      "source": "https://truyennow.vn",
-      "regexp": "https://truyennow.vn/(.*?)$",
+      "source": "https://truyen.now",
+      "regexp": "https://truyen.now/(.*?)$",
       "description": "Truyen.Free - Đọc truyện chữ online miễn phí, truyện tiên hiệp, kiếm hiệp, ngôn tình, đô thị được dịch nhanh chóng.",
       "locale": "vi_VN",
       "type": "novel"

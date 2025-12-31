@@ -8,7 +8,7 @@ function execute(url, page) {
     },
   }).html();
 
-  const list = html.select("#list-view .story-item").map((e) => {
+  const list = html.select(".story-list-view .story-item").map((e) => {
     return {
       name: e.select(".story-name").text(),
       link: BASE_URL + e.select(".story-name").attr("href"),
