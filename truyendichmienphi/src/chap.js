@@ -1,34 +1,28 @@
-load("config.js");
 load("crypto.js");
+load("tokendecode.js");
 
 function execute(url) {
-  var browser = Engine.newBrowser();
-  browser.setUserAgent(UserAgent.android());
-  browser.launch(getUrl(url), 30000);
+  const text = fetch(getUrl(url)).text();
+  const base64String = text.match(/data:image\/svg\+xml;base64,([^"]+)"/)[1];
+  const token = extractTokenFromSvg(base64String);
 
-  browser.waitUrl(
-    ".*?api\\.truyendichmienphi\\.com.*?token=([a-f0-9]{32})",
-    20000
-  );
+  if (!token) {
+    return Response.error("Failed to extract token");
+  }
 
-  const requestUrls = JSON.parse(browser.urls());
-  browser.close();
-
-  let targetApiUrl = "";
-
-  requestUrls.forEach((reqUrl) => {
-    if (
-      reqUrl.indexOf("/api/novels/") >= 0 &&
-      reqUrl.indexOf("/chapter/") >= 0 &&
-      reqUrl.indexOf("token=") >= 0 &&
-      reqUrl.indexOf("null") === -1
-    ) {
-      targetApiUrl = reqUrl;
-    }
-  });
   const PASSPHRASE = "z4x8vog2a13vz4x8vog2a13v124";
 
-  const response = fetch(targetApiUrl);
+  const response = fetch(url, {
+    headers: {
+      "X-Chapter-Token": token,
+      "user-agent": "vozer",
+    },
+  });
+
+  console.log(token);
+  if (!response.ok) {
+    return Response.error("Failed to fetch chapter content");
+  }
 
   const decodedText = CryptoJS.AES.decrypt(
     response.json().content,
