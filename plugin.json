@@ -74,6 +74,18 @@
       "description": "TruyenFree: Thư viện Truyện và Sách chất lượng, đa dạng thể loại để phục vụ bạn đọc.",
       "locale": "vi_VN",
       "type": "novel"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/truyennow/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/truyennow/icon.png",
+      "name": "Truyen Now",
+      "author": "mizhm",
+      "version": 1,
+      "source": "https://truyennow.vn",
+      "regexp": "https://truyennow.vn/(.*?)$",
+      "description": "Truyen.Free - Đọc truyện chữ online miễn phí, truyện tiên hiệp, kiếm hiệp, ngôn tình, đô thị được dịch nhanh chóng.",
+      "locale": "vi_VN",
+      "type": "novel"
     }
   ]
 }

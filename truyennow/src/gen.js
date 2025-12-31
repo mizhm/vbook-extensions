@@ -1,10 +1,9 @@
 load("config.js");
 
-function execute(key, page) {
+function execute(url, page) {
   if (!page) page = "1";
-  const html = fetch(BASE_URL + "/danh-sach", {
+  const html = fetch(url, {
     queries: {
-      q: key,
       page: page,
     },
   }).html();
