@@ -1,0 +1,22 @@
+{
+	"metadata": {
+		"name": "<Tên của extension>",
+		"author": "mizhm",
+		"version": 1,
+		"source": "<Địa chỉ trang nguồn>",
+		"regexp": "<RegExp khớp với URL của trang truyện>",
+		"description": "<Mô tả về extension>",
+		"locale": "<Quốc gia áp dụng của extension - Ex: vi_VN, en_US, zh_CN>",
+		"tag": "<Thêm nsfw nếu là trang 18+>",
+		"type": "<Thể loại của extension, comic/novel/chinese_novel>"
+	},
+	"script": {
+		"home": "home.js",
+		"genre": "genre.js",
+		"detail": "detail.js",
+		"search": "search.js",
+		"page": "page.js",
+		"toc": "toc.js",
+		"chap": "chap.js"
+	}
+}
