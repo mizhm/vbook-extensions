@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Cà Chua",
     "author": "mizhm",
-    "version": 4,
+    "version": 5,
     "source": "https://fanqienovel.com",
     "regexp": "https://fanqienovel.com/(.*?)$",
     "description": "Cà Chua",

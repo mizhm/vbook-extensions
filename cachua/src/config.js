@@ -1,5 +1,6 @@
 let BASE_URL = "https://fanqienovel.com";
-const API_URL = "https://qkfqapi.vv9v.cn/api";
+// const API_URL = "https://qkfqapi.vv9v.cn/api";
+const API_URL = "https://bk.yydjtc.cn/api";
 
 try {
   if (CONFIG_URL) {
