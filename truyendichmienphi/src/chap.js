@@ -10,7 +10,7 @@ function execute(url) {
     return Response.error("Failed to extract token");
   }
 
-  const PASSPHRASE = "z4x8vog2a13vz4x8vog2a13v124";
+  const PASSPHRASE = "z4x8vog2a13vz4x8vog2a13v";
 
   const response = fetch(url, {
     headers: {
