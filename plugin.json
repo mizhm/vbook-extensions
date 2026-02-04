@@ -31,7 +31,7 @@
       "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/cachua/icon.png",
       "name": "Cà Chua",
       "author": "mizhm",
-      "version": 5,
+      "version": 6,
       "source": "https://fanqienovel.com",
       "regexp": "https://fanqienovel.com/(.*?)$",
       "description": "Cà Chua",
