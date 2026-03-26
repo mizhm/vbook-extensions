@@ -8,7 +8,7 @@ function execute(url) {
   let text = fetch(url, {
     headers: {
       Accept: "text/x-component",
-      "Next-Action": "7fe3b0f3dabdb9f72db26b5237fd9755b6a8b6fdad",
+      "next-action": "4008c0dece1cbf808d489e298a56b9bfec70e43879",
     },
     body: `[{"bookId":"${bookId}","page":1,"limit":1000000000,"isNewest":false}]`,
     method: "POST",

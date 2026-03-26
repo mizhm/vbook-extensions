@@ -2,7 +2,7 @@
   "metadata": {
     "name": "truyenfree",
     "author": "mizhm",
-    "version": 1,
+    "version": 2,
     "source": "https://truyenfree.org",
     "regexp": "https://truyenfree.org/(.*?)$",
     "description": "TruyenFree: Thư viện Truyện và Sách chất lượng, đa dạng thể loại để phục vụ bạn đọc.",
