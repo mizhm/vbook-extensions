@@ -56,7 +56,7 @@
       "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/ihuaben/icon.png",
       "name": "ihuaben",
       "author": "mizhm",
-      "version": 3,
+      "version": 4,
       "source": "https://www.ihuaben.com",
       "regexp": "https://www.ihuaben.com/(.*?)$",
       "description": "ihuaben",
