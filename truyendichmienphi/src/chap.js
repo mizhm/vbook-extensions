@@ -12,8 +12,11 @@ function execute(url) {
 
   const PASSPHRASE = "z4x8vog2a13vz4x8vog2a13v";
 
+  let accessToken = localStorage.getItem("accessToken");
+
   const response = fetch(url, {
     headers: {
+      Authorization: `Bearer ${accessToken}`,
       "X-Chapter-Token": token,
       "user-agent": "vozer",
     },
@@ -26,7 +29,7 @@ function execute(url) {
 
   const decodedText = CryptoJS.AES.decrypt(
     response.json().content,
-    PASSPHRASE
+    PASSPHRASE,
   ).toString(CryptoJS.enc.Utf8);
 
   const lines = decodedText.split("\n");
