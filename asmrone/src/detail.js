@@ -10,13 +10,13 @@ function execute(url) {
         return "/api/search/" + encodeURIComponent("$" + kind + ":" + name + "$") + "?order=release&sort=desc";
     }
     let vas = (w.vas || []).map(function (v) { return v.name; });
-    let tags = [{ title: w.name, input: filter("circle", w.name), script: "search.js" }];
+    let genres = [{ title: "Circle: " + w.name, input: filter("circle", w.name), script: "search.js" }];
     (w.vas || []).forEach(function (v) {
-        tags.push({ title: "CV: " + v.name, input: filter("va", v.name), script: "search.js" });
+        genres.push({ title: "CV: " + v.name, input: filter("va", v.name), script: "search.js" });
     });
-    (w.tags || []).forEach(function (t) {
+    let tags = (w.tags || []).map(function (t) {
         let en = t.i18n && t.i18n["en-us"] ? t.i18n["en-us"].name : "";
-        tags.push({ title: en || t.name, input: filter("tag", t.name), script: "search.js" });
+        return { title: en || t.name, input: filter("tag", t.name), script: "search.js" };
     });
 
     let detail = w.source_id + "<br>Circle: " + w.name +
@@ -37,6 +37,7 @@ function execute(url) {
         format: "album",
         ongoing: false,
         nsfw: !!w.nsfw,
-        tags: tags
+        tags: tags,
+        genres: genres
     });
 }
