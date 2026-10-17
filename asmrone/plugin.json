@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "name": "ASMR One",
+    "author": "mizhm",
+    "version": 1,
+    "source": "https://asmr.one",
+    "description": "Nghe ASMR / drama CD từ asmr.one (kèm phụ đề lrc/vtt khi có)",
+    "locale": "ja",
+    "regexp": "(https?://)?(www\\.)?asmr(-\\d+)?\\.(one|com)/work/[A-Z]{2}\\d+",
+    "type": "audio",
+    "nsfw": true,
+    "encrypt": true
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "search": "search.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js",
+    "track": "track.js"
+  },
+  "config": {
+    "DOMAIN": {
+      "title": "Tên miền",
+      "subtitle": "asmr.one hoặc mirror (asmr-100.com, asmr-200.com, asmr-300.com)",
+      "default": "https://asmr.one",
+      "mode": "input",
+      "format": "text"
+    }
+  }
+}
