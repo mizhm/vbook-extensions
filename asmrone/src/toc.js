@@ -14,18 +14,23 @@ function walk(nodes, path, out) {
     nodes.forEach(function (n) {
         if (n.type !== "folder" && SUB_EXT.test(n.title)) subs[baseName(n.title)] = n.hash;
     });
+    // One section header per folder that directly holds audio; url kept unique per folder.
+    let header = path ? { name: path, url: API_URL + "/api/tracks/" + encodeURIComponent(path), type: "section" } : null;
     nodes.forEach(function (n) {
         if (n.type === "folder") {
             walk(n.children || [], path ? path + " / " + n.title : n.title, out);
             return;
         }
         if (n.type !== "audio") return;
+        if (header) {
+            out.push(header);
+            header = null;
+        }
         let url = API_URL + "/api/media/stream/" + n.hash;
         let sub = subs[baseName(n.title)];
         if (sub) url += "?sub=" + encodeURIComponent(sub);
         let mins = Math.round((n.duration || 0) / 60);
-        let desc = [path, mins ? mins + " phút" : ""].filter(function (x) { return x; }).join(" · ");
-        out.push({ name: n.title, url: url, description: desc, lock: false, pay: false });
+        out.push({ name: n.title, url: url, description: mins ? mins + " phút" : "", lock: false, pay: false });
     });
 }
 
