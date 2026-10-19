@@ -16,7 +16,7 @@ function execute(key, page) {
 			name: novel.title,
 			link: `${BASE_URL}/truyen/${novel.slug}`,
 			host: BASE_URL,
-			cover: `https://s3-hcm-r2.s3cloud.vn/tdmp/${novel.poster_url}`,
+			cover: `${ASSET_URL}/${novel.poster_url}`,
 			description: novel.description,
 		};
 	});

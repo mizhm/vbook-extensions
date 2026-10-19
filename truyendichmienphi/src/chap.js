@@ -2,6 +2,7 @@ load("crypto.js");
 load("tokendecode.js");
 
 function execute(url) {
+  url = url.replace(/^(https?:\/\/)?api\.truyendichmienphi\.com/, "https://api.comnguoinovel.com");
   const text = fetch(getUrl(url)).text();
   const base64String = text.match(/data:image\/svg\+xml;base64,([^"]+)"/)[1];
   const token = extractTokenFromSvg(base64String);
@@ -24,7 +25,8 @@ function execute(url) {
 
   console.log(token);
   if (!response.ok) {
-    return Response.error("Failed to fetch chapter content");
+    let error = response.json();
+    return Response.error((error && error.message) || "Failed to fetch chapter content");
   }
 
   const decodedText = CryptoJS.AES.decrypt(

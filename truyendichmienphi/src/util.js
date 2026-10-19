@@ -25,7 +25,7 @@ function slugify(string) {
 
 function getAPIURL(baseURL) {
   const regex =
-    /^(https?:\/\/)?(www\.)?truyendichmienphi\.com\/truyen\/([^/?#]+)(.*)?$/;
+    /^(https?:\/\/)?(www\.)?(?:truyendichmienphi|comnguoinovel)\.com\/truyen\/([^/?#]+)(.*)?$/;
 
   if (!regex.test(baseURL)) {
     return null;
@@ -33,7 +33,7 @@ function getAPIURL(baseURL) {
 
   const apiUrl = baseURL.replace(
     regex,
-    "https://api.truyendichmienphi.com/api/novels/$3"
+    API_URL + "/api/novels/$3"
   );
 
   return apiUrl;

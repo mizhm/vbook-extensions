@@ -17,7 +17,7 @@ function execute() {
 	genres.forEach((genre) => {
 		data.push({
 			title: genre.name,
-			input: `${BASE_URL}/api/novels/?genres=${genre.slug}`,
+			input: `${API_URL}/api/novels?genres=${genre.slug}`,
 			script: "genre-content.js",
 		});
 	});
@@ -25,7 +25,7 @@ function execute() {
 	literaryStyles.forEach((genre) => {
 		data.push({
 			title: genre.name,
-			input: `${BASE_URL}/api/novels/?literary_styles=${genre.slug}`,
+			input: `${API_URL}/api/novels?literary_styles=${genre.slug}`,
 			script: "genre-content.js",
 		});
 	});
@@ -33,7 +33,7 @@ function execute() {
 	worldSettings.forEach((genre) => {
 		data.push({
 			title: genre.name,
-			input: `${BASE_URL}/api/novels/?world_settings=${genre.slug}`,
+			input: `${API_URL}/api/novels?world_settings=${genre.slug}`,
 			script: "genre-content.js",
 		});
 	});
@@ -41,7 +41,7 @@ function execute() {
 	characterPersonalities.forEach((genre) => {
 		data.push({
 			title: genre.name,
-			input: `${BASE_URL}/api/novels/?character_personalities=${genre.slug}`,
+			input: `${API_URL}/api/novels?character_personalities=${genre.slug}`,
 			script: "genre-content.js",
 		});
 	});
