@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "name": "Kakuyomu",
+    "author": "mizhm",
+    "version": 1,
+    "source": "https://kakuyomu.jp",
+    "description": "カクヨム - Web tiểu thuyết Nhật Bản (ruby hiển thị dạng 漢字《かんじ》)",
+    "locale": "ja_JP",
+    "regexp": "(https?://)?kakuyomu\\.jp/works/\\d+/?",
+    "type": "novel",
+    "nsfw": false,
+    "encrypt": true
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "search": "search.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  },
+  "config": {
+    "DOMAIN": {
+      "title": "Domain",
+      "default": "https://kakuyomu.jp",
+      "mode": "input",
+      "format": "text"
+    }
+  }
+}

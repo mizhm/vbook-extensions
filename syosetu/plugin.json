@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "name": "Syosetu",
+    "author": "mizhm",
+    "version": 1,
+    "source": "https://ncode.syosetu.com",
+    "description": "小説家になろう - Web tiểu thuyết Nhật Bản (ruby hiển thị dạng 漢字《かんじ》)",
+    "locale": "ja_JP",
+    "regexp": "(https?://)?ncode\\.syosetu\\.com/n\\d+[a-z]+/?",
+    "type": "novel",
+    "nsfw": false,
+    "encrypt": true
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "search": "search.js",
+    "detail": "detail.js",
+    "page": "page.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  },
+  "config": {
+    "DOMAIN": {
+      "title": "Domain",
+      "default": "https://ncode.syosetu.com",
+      "mode": "input",
+      "format": "text"
+    }
+  }
+}

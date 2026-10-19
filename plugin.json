@@ -98,6 +98,42 @@
       "description": "Nghe ASMR / drama CD từ asmr.one (kèm phụ đề lrc/vtt khi có)",
       "locale": "ja",
       "type": "audio"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/kakuyomu/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/kakuyomu/icon.png",
+      "name": "Kakuyomu",
+      "author": "mizhm",
+      "version": 1,
+      "source": "https://kakuyomu.jp",
+      "regexp": "https://kakuyomu.jp/works/(.*?)$",
+      "description": "カクヨム - Web tiểu thuyết Nhật Bản (ruby hiển thị dạng 漢字《かんじ》)",
+      "locale": "ja_JP",
+      "type": "novel"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/syosetu/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/syosetu/icon.png",
+      "name": "Syosetu",
+      "author": "mizhm",
+      "version": 1,
+      "source": "https://ncode.syosetu.com",
+      "regexp": "https://ncode.syosetu.com/(.*?)$",
+      "description": "小説家になろう - Web tiểu thuyết Nhật Bản (ruby hiển thị dạng 漢字《かんじ》)",
+      "locale": "ja_JP",
+      "type": "novel"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/syosetu18/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/syosetu18/icon.png",
+      "name": "Syosetu R18",
+      "author": "mizhm",
+      "version": 1,
+      "source": "https://novel18.syosetu.com",
+      "regexp": "https://novel18.syosetu.com/(.*?)$",
+      "description": "ノクターン / ムーンライト / ミッドナイトノベルズ - Web tiểu thuyết R18 của Narou (ruby hiển thị dạng 漢字《かんじ》)",
+      "locale": "ja_JP",
+      "type": "novel"
     }
   ]
 }
