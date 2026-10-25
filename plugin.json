@@ -134,6 +134,42 @@
       "description": "ノクターン / ムーンライト / ミッドナイトノベルズ - Web tiểu thuyết R18 của Narou (ruby hiển thị dạng 漢字《かんじ》)",
       "locale": "ja_JP",
       "type": "novel"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/japaneseasmr/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/japaneseasmr/icon.png",
+      "name": "Japanese ASMR",
+      "author": "mizhm",
+      "version": 1,
+      "source": "https://japaneseasmr.com",
+      "regexp": "(https?://)?(www\\.)?japaneseasmr\\.com/\\d+/?",
+      "description": "Nghe ASMR / drama CD tiếng Nhật từ japaneseasmr.com",
+      "locale": "ja",
+      "type": "audio"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/asmrchive/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/asmrchive/icon.png",
+      "name": "ASMRchive",
+      "author": "mizhm",
+      "version": 1,
+      "source": "https://asmrchive.moe",
+      "regexp": "(https?://)?(www\\.)?asmrchive\\.moe/share/[A-Za-z0-9_-]+/?",
+      "description": "Kho lưu trữ ASMR của VTuber (YouTube, Twitch, rplay) từ asmrchive.moe",
+      "locale": "en",
+      "type": "audio"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/frostedsakura/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/frostedsakura/icon.png",
+      "name": "Frostedsakura Stash",
+      "author": "mizhm",
+      "version": 1,
+      "source": "https://stash.frostedsakura.my.id",
+      "regexp": "(https?://)?stash\\.frostedsakura\\.my\\.id/[^@/][^/]*/.+",
+      "description": "Kho ASMR / stream VTuber trên stash.frostedsakura.my.id (OpenList)",
+      "locale": "en",
+      "type": "audio"
     }
   ]
 }

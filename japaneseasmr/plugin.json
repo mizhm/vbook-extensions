@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "name": "Japanese ASMR",
+    "author": "mizhm",
+    "version": 1,
+    "source": "https://japaneseasmr.com",
+    "description": "Nghe ASMR / drama CD tiếng Nhật từ japaneseasmr.com",
+    "locale": "ja",
+    "regexp": "(https?://)?(www\\.)?japaneseasmr\\.com/\\d+/?",
+    "type": "audio",
+    "nsfw": true,
+    "encrypt": true
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "search": "search.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js",
+    "track": "track.js"
+  },
+  "config": {
+    "DOMAIN": {
+      "title": "Tên miền",
+      "default": "https://japaneseasmr.com",
+      "mode": "input",
+      "format": "text"
+    }
+  }
+}
