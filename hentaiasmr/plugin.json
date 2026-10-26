@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "name": "Hentai ASMR",
+    "author": "mizhm",
+    "version": 1,
+    "source": "https://hentaiasmr.moe",
+    "description": "Nghe ASMR / drama CD 18+ tiếng Nhật (kèm EN, 中文) từ hentaiasmr.moe",
+    "locale": "ja",
+    "regexp": "(https?://)?(www\\.)?hentaiasmr\\.moe/[^/?#]+\\.html",
+    "type": "audio",
+    "nsfw": true,
+    "encrypt": true
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "search": "search.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js",
+    "track": "track.js"
+  },
+  "config": {
+    "DOMAIN": {
+      "title": "Tên miền",
+      "default": "https://hentaiasmr.moe",
+      "mode": "input",
+      "format": "text"
+    }
+  }
+}

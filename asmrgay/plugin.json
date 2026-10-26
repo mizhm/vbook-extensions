@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "name": "ASMR基佬中心",
+    "author": "mizhm",
+    "version": 1,
+    "source": "https://www.asmrgay.com",
+    "description": "Kho audio ASMR / 中文音声 / 同人音声 trên asmrgay.com (OpenList)",
+    "locale": "zh",
+    "regexp": "(https?://)?(www\\.)?asmrgay\\.com/[^@/][^/]*/.+",
+    "type": "audio",
+    "nsfw": true,
+    "encrypt": true
+  },
+  "script": {
+    "home": "home.js",
+    "search": "search.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js",
+    "track": "track.js"
+  },
+  "config": {
+    "DOMAIN": {
+      "title": "Tên miền",
+      "default": "https://www.asmrgay.com",
+      "mode": "input",
+      "format": "text"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "name": "ASMR+18",
+    "author": "mizhm",
+    "version": 1,
+    "source": "https://asmr18.fans",
+    "description": "Nghe ASMR / drama CD tiếng Nhật (DLsite) từ asmr18.fans",
+    "locale": "ja",
+    "regexp": "(https?://)?(www\\.)?asmr18\\.fans/(boys|girls|allages)/rj\\d+/?",
+    "type": "audio",
+    "nsfw": true,
+    "encrypt": true
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "search": "search.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js",
+    "track": "track.js"
+  },
+  "config": {
+    "DOMAIN": {
+      "title": "Tên miền",
+      "default": "https://asmr18.fans",
+      "mode": "input",
+      "format": "text"
+    }
+  }
+}
