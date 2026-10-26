@@ -140,7 +140,7 @@
       "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/japaneseasmr/icon.png",
       "name": "Japanese ASMR",
       "author": "mizhm",
-      "version": 1,
+      "version": 2,
       "source": "https://japaneseasmr.com",
       "regexp": "(https?://)?(www\\.)?japaneseasmr\\.com/\\d+/?",
       "description": "Nghe ASMR / drama CD tiếng Nhật từ japaneseasmr.com",
