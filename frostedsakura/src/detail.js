@@ -12,8 +12,8 @@ function execute(url) {
         description: path,
         detail: "Thư mục: " + path + "<br>Cập nhật: " + (data.modified || "").substring(0, 10),
         url: pageUrl(path),
-        type: "audio",
-        format: "album",
+        type: "video",
+        format: "series",
         ongoing: true,
         nsfw: true,
         genres: [{ title: "Thư mục cha: " + parent, input: parent, script: "search.js" }]

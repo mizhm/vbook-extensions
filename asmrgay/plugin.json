@@ -2,12 +2,12 @@
   "metadata": {
     "name": "ASMR基佬中心",
     "author": "mizhm",
-    "version": 1,
+    "version": 2,
     "source": "https://www.asmrgay.com",
     "description": "Kho audio ASMR / 中文音声 / 同人音声 trên asmrgay.com (OpenList)",
     "locale": "zh",
     "regexp": "(https?://)?(www\\.)?asmrgay\\.com/[^@/][^/]*/.+",
-    "type": "audio",
+    "type": "video",
     "nsfw": true,
     "encrypt": true
   },

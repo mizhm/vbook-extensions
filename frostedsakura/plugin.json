@@ -2,12 +2,12 @@
   "metadata": {
     "name": "Frostedsakura Stash",
     "author": "mizhm",
-    "version": 1,
+    "version": 2,
     "source": "https://stash.frostedsakura.my.id",
     "description": "Kho ASMR / stream VTuber trên stash.frostedsakura.my.id (OpenList)",
     "locale": "en",
     "regexp": "(https?://)?stash\\.frostedsakura\\.my\\.id/[^@/][^/]*/.+",
-    "type": "audio",
+    "type": "video",
     "nsfw": true,
     "encrypt": true
   },
