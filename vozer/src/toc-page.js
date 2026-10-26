@@ -1,16 +1,16 @@
 load("config.js");
-function execute(url) {
-  let data = [];
-  let doc = fetch(url, {
-    headers: {
-      "User-Agent": BASE_UA,
-    },
-  }).html();
 
-  const numberOfChaps = doc.toString().match(/"numberOfPages"\s*:\s*(\d+)/)[1];
-  const lastNumber = Math.ceil(parseInt(numberOfChaps, 10) / 50);
-  for (let i = 1; i <= lastNumber; i++) {
-    data.push(url + "?pagechap=" + i);
-  }
-  return Response.success(data);
+function execute(url) {
+	let doc = fetchHtml(normalizeUrl(url).replace(/\?.*$/, ""));
+	if (!doc) return Response.error("Failed to fetch data");
+	let endpoint = chapterEndpoint(doc);
+	if (!endpoint) return Response.error("Chapter list not found");
+	let response = postChapters(endpoint, 1, saveCsrf(doc));
+	if (!response.ok) return Response.error("HTTP " + response.status);
+	let lastPage = response.json().lastPage;
+	let data = [];
+	for (let i = 1; i <= lastPage; i++) {
+		data.push(endpoint + "?page=" + i);
+	}
+	return Response.success(data);
 }
