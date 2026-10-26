@@ -15,8 +15,8 @@ function execute(url) {
         detail: "Kênh: " + meta.artist + "<br>Ngày đăng: " + date + "<br>Nguồn: " + (meta.webpageUrl || "") +
             (meta.unavailableAt ? "<br>Bản gốc đã bị gỡ" : ""),
         url: shareUrl(key),
-        type: "audio",
-        format: "audio",
+        type: "video",
+        format: "series",
         ongoing: false,
         nsfw: !!meta.isMature,
         genres: [{
