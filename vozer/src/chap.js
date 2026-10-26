@@ -9,7 +9,7 @@ function execute(url) {
 	// Content URL/token live in an inline script; the body arrives as XOR'd base64 JSON.
 	let contentUrl = html.match(/var contentUrl = "([^"]+)"/);
 	let contentToken = html.match(/var contentToken = "([^"]+)"/);
-	if (!contentUrl || !contentToken) return Response.error("Chương cần đăng nhập để đọc");
+	if (!contentUrl || !contentToken) return Response.error("Chương chưa mở khóa hoặc cần đăng nhập");
 	let csrf = Html.parse(html).select("meta[name=csrf-token]").attr("content");
 	let res = request(BASE_URL + contentUrl[1].replace(/\\\//g, "/"), {
 		headers: {

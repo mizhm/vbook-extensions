@@ -67,6 +67,11 @@ function postChapters(endpoint, page, token) {
 	});
 }
 
+// Short stories render a flow list; long ones a lazy catalog whose locked rows have no link.
+function chapterLinks(html) {
+	return Html.parse(html).select(".chapter-list-flow-item a, a.lazy-catalog-row[href]");
+}
+
 function chapterEndpoint(doc) {
 	return doc.select("[data-chapter-list]").attr("data-endpoint");
 }

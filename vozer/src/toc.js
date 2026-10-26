@@ -1,8 +1,10 @@
 load("config.js");
 
-// Input is a page URL from toc-page.js (<endpoint>?page=N), or a story URL.
+// Input is a page URL from toc-page.js (<endpoint>?page=N[&size&total&tpl]), or a story URL.
 function execute(url) {
 	url = normalizeUrl(url);
+	let tpl = url.match(/[?&]tpl=([^&]+)/);
+	if (tpl) return generated(url, decodeURIComponent(tpl[1]));
 	let endpoint = url.replace(/\?.*$/, "");
 	let page = url.match(/[?&]page=(\d+)/);
 	page = page ? parseInt(page[1]) : 1;
@@ -21,12 +23,23 @@ function execute(url) {
 	}
 	if (!response.ok) return Response.error("HTTP " + response.status);
 	let data = [];
-	Html.parse(response.json().html).select(".chapter-list-flow-item a, a.lazy-catalog-row[href]").forEach(function (e) {
+	chapterLinks(response.json().html).forEach(function (e) {
 		data.push({
 			name: e.attr("title").replace(/\s*-\s*Cập nhật:.*$/, ""),
 			url: e.attr("href"),
 			host: BASE_URL,
 		});
 	});
+	return Response.success(data);
+}
+
+function generated(url, tpl) {
+	let page = parseInt(url.match(/[?&]page=(\d+)/)[1]);
+	let size = parseInt(url.match(/[?&]size=(\d+)/)[1]);
+	let total = parseInt(url.match(/[?&]total=(\d+)/)[1]);
+	let data = [];
+	for (let n = (page - 1) * size + 1; n <= Math.min(page * size, total); n++) {
+		data.push({ name: "Chương " + n, url: tpl.replace("{n}", n), host: BASE_URL });
+	}
 	return Response.success(data);
 }
