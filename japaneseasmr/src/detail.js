@@ -21,6 +21,10 @@ function execute(url) {
         if (!/\/(rating|requested)\//.test(href)) circle = a.text();
         return { title: a.text(), input: href, script: "search.js" };
     });
+    // App does not render `tags`, so post tags go into genres too.
+    doc.select(".post-tags a[rel=tag]").forEach(function (a) {
+        genres.push({ title: a.text(), input: a.attr("href"), script: "search.js" });
+    });
     let cover = doc.select("img[data-src*=_img_main]").attr("data-src") || doc.select("#cleanp_audio video").attr("poster");
 
     return Response.success({
@@ -35,9 +39,6 @@ function execute(url) {
         format: "album",
         ongoing: false,
         nsfw: nsfw,
-        tags: doc.select(".post-tags a[rel=tag]").map(function (a) {
-            return { title: a.text(), input: a.attr("href"), script: "search.js" };
-        }),
         genres: genres
     });
 }
