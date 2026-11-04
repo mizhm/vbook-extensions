@@ -206,6 +206,18 @@
       "description": "Kho audio ASMR / 中文音声 / 同人音声 trên asmrgay.com (OpenList)",
       "locale": "zh",
       "type": "audio"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/novelstw/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/novelstw/icon.png",
+      "name": "Novels TW",
+      "author": "mizhm",
+      "version": 2,
+      "source": "https://www.novels.com.tw",
+      "regexp": "(https?://)?(www\\.)?novels\\.com\\.tw/novels/[^/]+/?(\\?.*)?$",
+      "description": "繁體小說 - novels.com.tw. Cần mở trang bằng trình duyệt trong app một lần để qua Cloudflare.",
+      "locale": "zh_TW",
+      "type": "novel"
     }
   ]
 }

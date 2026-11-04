@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "name": "Novels TW",
+    "author": "mizhm",
+    "version": 2,
+    "source": "https://www.novels.com.tw",
+    "description": "繁體小說 - novels.com.tw. Cần mở trang bằng trình duyệt trong app một lần để qua Cloudflare.",
+    "locale": "zh_TW",
+    "regexp": "(https?://)?(www\\.)?novels\\.com\\.tw/novels/[^/]+/?(\\?.*)?$",
+    "type": "novel",
+    "nsfw": true,
+    "encrypt": true
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "search": "search.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  },
+  "config": {
+    "DOMAIN": {
+      "title": "Domain",
+      "default": "https://www.novels.com.tw",
+      "mode": "input",
+      "format": "text"
+    },
+    "thread_num": 1,
+    "delay": 1000
+  }
+}
