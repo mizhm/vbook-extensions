@@ -21,9 +21,10 @@ function execute(url) {
     let names = function (key) {
         return (groups[key] || []).map(function (t) { return t.title; }).join(", ");
     };
-    let tags = [];
+    // App does not render `tags`, so every group and the category go into genres.
+    let genres = [];
     detail = detail.map(function (key) {
-        if (key !== "ジャンル") tags = tags.concat(groups[key]);
+        genres = genres.concat(groups[key]);
         return key + ": " + names(key);
     });
 
@@ -37,8 +38,7 @@ function execute(url) {
         format: "album",
         ongoing: false,
         nsfw: !/\/allages\//.test(url),
-        tags: tags,
-        genres: (groups["ジャンル"] || []).concat(doc.select("#post-category a").map(function (a) {
+        genres: genres.concat(doc.select("#post-category a").map(function (a) {
             return { title: a.text(), input: a.attr("href"), script: "search.js" };
         }))
     });

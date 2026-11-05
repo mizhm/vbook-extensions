@@ -12,7 +12,7 @@ function execute(url) {
     let tracks = [];
     let m;
     while ((m = re.exec(html)) !== null) {
-        if (seen[m[1]]) continue;
+        if (seen[m[1]] || !/^https?:/.test(m[1])) continue; // skips JWPlayer placeholders like file: "no"
         seen[m[1]] = true;
         tracks.push({
             name: m[2] || "Track " + (tracks.length + 1),

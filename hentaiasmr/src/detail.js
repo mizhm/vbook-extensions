@@ -7,12 +7,9 @@ function execute(url) {
 
     let cv = doc.select("#video-actors a").map(function (a) { return a.text(); }).join(", ");
     let desc = doc.select(".video-description .desc").first();
-    let genres = [];
-    let tags = [];
-    doc.select(".tags-list a").forEach(function (a) {
-        let item = { title: a.text(), input: a.attr("href"), script: "search.js" };
-        if (a.attr("href").indexOf("/category/") >= 0) genres.push(item);
-        else tags.push(item);
+    // App does not render `tags`, so categories and tags all go into genres.
+    let genres = doc.select(".tags-list a").map(function (a) {
+        return { title: a.text(), input: a.attr("href"), script: "search.js" };
     });
 
     return Response.success({
@@ -26,7 +23,6 @@ function execute(url) {
         format: "album",
         ongoing: false,
         nsfw: true,
-        tags: tags,
         genres: genres
     });
 }

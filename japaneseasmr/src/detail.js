@@ -25,6 +25,10 @@ function execute(url) {
     doc.select(".post-tags a[rel=tag]").forEach(function (a) {
         genres.push({ title: a.text(), input: a.attr("href"), script: "search.js" });
     });
+    // Chapters can't be separate tracks (the player ignores seek hints), so list the start times.
+    let chapters = doc.select("#plyr-chapter-playlist tr").map(function (tr) {
+        return tr.select("td.start_time a").text() + " " + tr.select("a[data-track-title]").attr("data-track-title");
+    }).filter(function (t) { return t.trim(); });
     let cover = doc.select("img[data-src*=_img_main]").attr("data-src") || doc.select("#cleanp_audio video").attr("poster");
 
     return Response.success({
@@ -33,7 +37,8 @@ function execute(url) {
         cover: cover,
         description: doc.select("div[itemprop=description]").first() ? doc.select("div[itemprop=description]").first().html() : "",
         detail: "RJ: " + rj + "<br>Circle: " + circle + "<br>CV: " + cv +
-            "<br>Đăng: " + doc.select(".entry-tagline time").attr("datetime"),
+            "<br>Đăng: " + doc.select(".entry-tagline time").attr("datetime") +
+            (chapters.length ? "<br><br>" + chapters.join("<br>") : ""),
         url: url,
         type: "audio",
         format: "album",
