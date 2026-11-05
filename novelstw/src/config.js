@@ -25,10 +25,37 @@ function fetchPage(url, options) {
     }
     if (response.status === 429) return { error: Response.error("Bị giới hạn tốc độ (HTTP 429), thử lại sau ít phút") };
     if (response.status === 403 || response.status === 503) {
-        return { error: Response.error("Cloudflare chặn (HTTP " + response.status + "): mở " + BASE_URL + " bằng trình duyệt trong app để qua xác minh rồi thử lại") };
+        // Plain fetch can be rejected (e.g. iOS network stack, missing clearance) while the in-app WebView passes.
+        let doc = browserFetch(url, options);
+        if (doc) return { doc: doc };
+        let title = Html.parse(String(response.text())).select("title").text();
+        return { error: Response.error("Cloudflare chặn (HTTP " + response.status + ", \"" + title + "\"): mở " + BASE_URL + " bằng trình duyệt trong app để qua xác minh rồi thử lại") };
     }
     if (!response.ok) return { error: Response.error("HTTP " + response.status) };
     return { doc: response.html() };
+}
+
+// Loads the page in the headless WebView (which carries the browser's Cloudflare state); POST is done as a same-origin sync XHR.
+function browserFetch(url, options) {
+    let browser = Engine.newBrowser();
+    try {
+        let isPost = options && options.method === "POST";
+        let doc = browser.launch(isPost ? BASE_URL + "/" : url, 20000);
+        for (let i = 0; i < 4 && doc && /Just a moment/i.test(doc.select("title").text()); i++) {
+            doc = browser.html(3000);
+        }
+        if (!doc || /Just a moment/i.test(doc.select("title").text())) return null;
+        if (!isPost) return doc;
+        let js = "var x=new XMLHttpRequest();x.open('POST'," + JSON.stringify(url.replace(BASE_URL, "")) +
+            ",false);x.setRequestHeader('Content-Type','application/x-www-form-urlencoded');x.send(" +
+            JSON.stringify(String(options.body)) + ");encodeURIComponent(x.responseText)";
+        let text = String(browser.callJs(js, 15000).text());
+        return text ? Html.parse(decodeURIComponent(text)) : null;
+    } catch (e) {
+        return null;
+    } finally {
+        browser.close();
+    }
 }
 
 // Site text contains literal "\n" sequences in blurbs.

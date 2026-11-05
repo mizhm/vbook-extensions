@@ -212,7 +212,7 @@
       "icon": "https://raw.githubusercontent.com/mizhm/vbook-extensions/main/novelstw/icon.png",
       "name": "Novels TW",
       "author": "mizhm",
-      "version": 2,
+      "version": 3,
       "source": "https://www.novels.com.tw",
       "regexp": "(https?://)?(www\\.)?novels\\.com\\.tw/novels/[^/]+/?(\\?.*)?$",
       "description": "繁體小說 - novels.com.tw. Cần mở trang bằng trình duyệt trong app một lần để qua Cloudflare.",
